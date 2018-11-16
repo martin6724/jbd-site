@@ -1,0 +1,429 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// SCSS Syntax http://sass-lang.com/documentation/file.SASS_REFERENCE.html#css_extensions
+
+// variable declaration in SCSS we use variables to keep style clean and easy to modify
+// if we use this variable to say 50 rules and want to change the color, we would change only this variable.
+
+// in SCSS we nest
+
+
+@font-face {
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: normal;
+src: local('Bebas Neue'), url('BebasNeue.woff') format('woff');
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue';
+  color: $primary;
+}
+
+h4 {
+  font-family: 'Bebas Neue';
+  color: grey;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+
+
+#primary {
+
+main {
+background: $brand-secondary;
+padding-bottom: 1rem;
+
+.parallax-container {
+  // position: relative;
+  background:linear-gradient(#00000045,rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0)), url('../img/temp-parallax.jpg');
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin-top: -27rem;
+}
+
+.home-top-form {
+  background: $primary;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+ transform: translate(-50%, -50%);
+  padding-left:3%;
+  padding-right:1%;
+  padding: 15px;
+  margin: 0;
+  width: max-content;
+
+  .form-inner {
+    display: flex;
+
+  h3 {
+    float: left;
+    color: white;
+    margin-top: 12px;
+    font-size: 35px;
+  @media screen and (max-width: 750px) {
+    text-align: center;
+  }
+  }
+
+  // .form-group {
+  //   float: right;
+
+    .custom-drop {
+      float: right;
+      margin-top: -30px;
+      margin-right: 5px;
+      /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+      pointer-events: none;
+      /* everything after this is just to cover up the original arrow */
+      /* (for browsers that don't support the syntax used above) */
+      background-color: #fff;
+      padding-right: 5px;
+    }
+
+    select {
+        /* remove the original arrow */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        /* no standardized syntax available, no ie-friendly solution available */
+        border-radius:0 !important;
+        margin:0;
+        &.dropdowns {
+          margin-left: 0.5em;
+          margin-right: 0;
+          border-radius:0 !important;
+
+    }
+  }
+  .select-dropdown {
+    width:2.4rem;
+  }
+}
+
+
+    .btn-custom {
+      background: $brand-third;
+      font-family: 'Bebas Neue';
+      font-size: 22px;
+      letter-spacing: 1px;
+      border-radius:unset;
+      color: $primary;
+      margin-left: 0.5em;
+      line-height: 1;
+      padding: 7px;
+
+      &:hover {
+        background: $brand-secondary;
+      }
+    }
+  }
+
+
+
+.home-tabs{
+  display: flex;
+  width: 120%;
+  margin-top:20px;
+  margin-bottom: 50px;
+  padding: 0;
+  margin-left: 6%;
+
+.tab-box {
+  background: $primary;
+  flex: 1;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+
+&:not(:first-child) {
+  margin-left: 10px;
+}
+
+&:hover {
+  background-color: lightgrey;
+  text-decoration: underline;
+}
+
+.tab-name {
+  position: absolute;
+  padding-top: 2rem;
+  bottom: -60px;
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  color: $primary;
+  text-align: center;
+  overflow: auto;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -35%;
+  height: -100%; /* height must be set to work, percentages will work */
+&:hover {
+    text-decoration: underline;
+  }
+}
+
+  .tab-icon {
+  display: flex;
+  max-width: 70%;
+  margin: auto;
+  padding:20px 0px 20px 0px;
+  }
+}
+}
+
+.inner-tabs-content {
+  text-align: left;
+  position: relative;
+
+  .tab-content{
+  // display: none;
+
+  img {
+    margin-top:2rem;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.corner-left {
+  position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid $primary;
+    border-left: 50px solid transparent;
+    left: 0px;
+  }
+
+.corner-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid $primary;
+  border-right: 50px solid transparent;
+  right: 0;
+}
+
+.inner-tab-row {
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 30px;
+
+  .description-left{
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+  .description-right{
+    padding-top: 10px;
+    padding-right: 30px;
+    background-color: #ffffff;
+  }
+
+}
+
+}
+}
+
+
+.partner-schools {
+  margin-left: 35px;
+  margin-right: 35px;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 55px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+
+  .carousel-control-prev {
+    left: -90px;
+    .text-muted {
+      color: $primary !important;
+    }
+  }
+  .carousel-control-next {
+    right: -90px;
+     .text-muted {
+       color: $primary !important;
+    }
+  }
+
+  .carousel-inner {
+
+    .active {
+      display: block;
+      + .carousel-item {
+        display: block;
+        + .carousel-item {
+          display: block;
+          + .carousel-item {
+            display: block;
+            + .carousel-item {
+              display: block;
+              + .carousel-item {
+                display: block;
+                + .carousel-item {
+                  display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) {
+      transition: none;
+      + .carousel-item {
+        transition: none;
+        + .carousel-item {
+          transition: none;
+          + .carousel-item {
+            transition: none;
+            + .carousel-item {
+              transition: none;
+              + .carousel-item {
+                transition: none;
+                + .carousel-item {
+                  transition: none;
+
+                + .carousel-item {
+                  transition: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+    .carousel-item-next, .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  /* left or forward direction */
+
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  .carousel-item-next.carousel-item-left + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+    + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+      + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+        + .carousel-item {
+          position: relative;
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+          + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+            + .carousel-item {
+              position: relative;
+              transform: translate3d(-100%, 0, 0);
+              visibility: visible;
+              + .carousel-item {
+                position: relative;
+                transform: translate3d(-100%, 0, 0);
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+
+  .carousel-item-prev.carousel-item-right + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+
+    + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+      + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+        + .carousel-item {
+          position: relative;
+          transform: translate3d(100%, 0, 0);
+          visibility: visible;
+          display: block;
+          visibility: visible;
+          + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+            + .carousel-item {
+              position: relative;
+              transform: translate3d(100%, 0, 0);
+              visibility: visible;
+              display: block;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+}

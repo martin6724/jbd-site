@@ -1,0 +1,44 @@
+#page-wrapper{
+
+
+.programs-parallax-container {
+  background:linear-gradient(#00000045,rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0)), url('../img/programs-parallax.png');
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin-top: -17%;
+  margin-bottom: 2%;
+  z-index: -2;
+  position: relative;
+
+  & .programs-title {
+    position: absolute;
+    bottom:0;
+
+  }
+}
+
+#mock-sidebar {
+  ul {
+    list-style-type: none;
+    li {
+      font-family: 'Bebas Neue';
+      font-size: 20px;
+      background-color: $brand-primary;
+      margin-top: 5px;
+    a {
+      color: white;
+      text-align: center;
+      justify-content: center;
+      display: block;
+    }
+    }
+  }
+}
+
+
+
+
+}

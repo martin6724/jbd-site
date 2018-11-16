@@ -1,0 +1,78 @@
+#wrapper-navbar {
+
+nav {
+padding:0;
+margin: -1%;
+
+.navbar {
+  position: absolute;
+  top:0;
+  padding-top:0 !important;
+
+  .header-logo {
+    margin:0;
+    padding: 0;
+    width:20%;
+
+    & .custom-logo-link {
+      width: 200px;
+      height: 200px;
+      padding:0;
+      margin:0;
+    }
+
+}
+
+}
+
+#main-menu {
+  background-color: $brand-primary;
+  padding: 15px;
+  margin-left: 10%;
+  position: absolute;
+  display: inline-flex;
+  top: 30%;
+  left: 35%;
+  /* float: right; */
+  text-align: center;
+
+  li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1;
+
+    &:not(:last-child) { border-right: 1px solid white;
+    }
+
+  a.nav-link {
+    color: $brand-secondary;
+    font-size: 14px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:hover {
+      color: $brand-third;
+    }
+}
+
+}
+}
+
+
+  a {
+    color: white;
+    // change a on hover example
+    // in CSS this was selected by nav a:hover
+
+      .navbar-brand {
+        min-width:5em;
+        padding-top:unset;
+      }
+    }
+
+  }
+}
