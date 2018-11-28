@@ -15,7 +15,7 @@ get_header();
   <div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-      <div class="parallax-container">
+      <div class="home-parallax-container">
         <!-- Cover photo form div  -->
         <div class="container">
         <div class="row home-top-form">

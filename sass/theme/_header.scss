@@ -4,26 +4,6 @@ nav {
 padding:0;
 margin: -1%;
 
-.navbar {
-  position: absolute;
-  top:0;
-  padding-top:0 !important;
-
-  .header-logo {
-    margin:0;
-    padding: 0;
-    width:20%;
-
-    & .custom-logo-link {
-      width: 200px;
-      height: 200px;
-      padding:0;
-      margin:0;
-    }
-
-}
-
-}
 
 #main-menu {
   background-color: $brand-primary;
@@ -43,7 +23,17 @@ margin: -1%;
     text-align: center;
     line-height: 1;
 
-    &:not(:last-child) { border-right: 1px solid white;
+    &:not(:last-child) {
+      border-right: 1px solid white;
+    }
+
+    .dropdown-menu {
+      background-color: $brand-primary;
+      color: white;
+
+    .dropdown-item:hover {
+      background-color: unset;
+    }
     }
 
   a.nav-link {
@@ -51,8 +41,8 @@ margin: -1%;
     font-size: 14px;
     font-family: helvetica, sans-serif;
     font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &:hover {
       color: $brand-third;
@@ -71,6 +61,10 @@ margin: -1%;
       .navbar-brand {
         min-width:5em;
         padding-top:unset;
+      }
+
+      & img {
+        width: 70% !important;
       }
     }
 

@@ -1,6 +1,6 @@
 #wrapper-footer {
   background: $bg-primary;
-  position: relative;
+  // position: relative;
   bottom: 0;
   padding:0;
   left:0;
@@ -10,16 +10,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+   right: 0;
+   bottom: 0;
+   margin-top:2%;
 
 .site-info {
   .social {
     padding:15px;
     display: inline-block;
     justify-content: right;
-
     a {
       color: #ffffff;
-      padding:0;
     }
 
     @media screen and (max-width: 575px) {
@@ -29,52 +31,54 @@
       flex-direction: row;
       justify-content: center;
     }
-
-  }
-}
-
-.footer-link {
-  top:0px;
-  border-right:1px solid #ffffff;
-  display: flex;
-
-  @media screen and (max-width: 767px) {
-  width:100%;
   }
 
-  &:hover {
-    background-color: lightgrey;
-  }
+    .footer-link {
+      justify-content: space-between;
 
-  h6 {
-    font-size: 12px;
-    padding:0px;
-    text-align: center;
-  }
+      @media screen and (max-width: 767px) {
+        width:100%;
+      }
 
-  & a {
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
+      ul {
+        list-style-type: none;
 
-    &:hover {
-    color: $brand-primary;
+        li {
+          list-style-type: none;
+          display: flex;
+          float: left;
+          width:auto;
+          margin-left: 5%;
+          padding-right: 5%;
+          top:0px;
+          text-align: center;
+          justify-content: space-between;
+
+          &:not(:last-child){
+            border-right:1px solid #ffffff;
+          }
+
+          & a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            list-style-type: none;
+            text-align: center;
+            padding-right:10px;
+
+            &:hover {
+              color: $brand-third;
+            }
+          }
+
+        }
+      }
     }
+
   }
 
-}
 
-.footer-link:not(:last-child) {
-  right:20px;
-  top:0px;
-  border-right:1px solid #ffffff;
 
-  & a {
-    color: #ffffff;
-    font-weight: bold;
-  }
-
-}
 
 }

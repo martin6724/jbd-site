@@ -11,17 +11,19 @@ for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
 }
 
+
+
+
 tabboxes = document.getElementsByClassName("tab-box");
 for (i = 0; i < tabboxes.length; i++) {
     tabboxes[i].className = tabboxes[i].className.replace(" active", "");
 }
 
 document.getElementById(tabInner).style.display = "block";
-evt.currentTarget.className += " active";
+evt.currentTarget.className += " active faded";
+
 
 }
-
-
 
 jQuery('#myCarousel').on('slide.bs.carousel', function (e) {
 
