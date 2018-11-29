@@ -1,8 +1,4 @@
-Travis build: [![Build Status](https://travis-ci.org/understrap/understrap.svg?branch=master)](https://travis-ci.org/understrap/understrap)
-
-#### See: [Official Demo](https://understrap.com/understrap) | Read: [Official Docs Page](https://understrap.github.io/)
-
-# UnderStrap WordPress Theme Framework
+I'm developing a new custom wordpress theme using Understrap as a starter, you can learn more about that here:
 
 Website: [https://understrap.com](https://understrap.com)
 
@@ -10,17 +6,9 @@ Child Theme Project: [https://github.com/understrap/understrap-child](https://gi
 
 ## About
 
-I’m a huge fan of Underscores, Bootstrap, and Sass. Why not combine these into a solid WordPress Theme Framework? That’s what UnderStrap is. You can use it as a starter theme and build your own theme on top of it. Or you can use it as a parent theme and create your own child theme for UnderStrap.
+Underscores, Bootstrap, and Sass using Gulp to minify files! 
 
-## License
-UnderStrap WordPress Theme, Copyright 2013-2018 Holger Koenemann
-UnderStrap is distributed under the terms of the GNU GPL version 2
-
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-
-## Changelog
-See [changelog](CHANGELOG.md)
-
+Notes from Underscores:
 
 ## Basic Features
 
@@ -31,7 +19,6 @@ See [changelog](CHANGELOG.md)
 - Jetpack ready.
 - WooCommerce support.
 - Contact Form 7 support.
-- [Child Theme](https://github.com/holger1411/understrap-child) ready.
 - Translation ready.
 
 ## Starter Theme + HTML Framework = WordPress Theme Framework
@@ -148,5 +135,3 @@ and of course
 - WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL
 - Bootstrap Gallery Script based on Roots Sage Gallery: https://github.com/roots/sage/blob/5b9786b8ceecfe717db55666efe5bcf0c9e1801c/lib/gallery.php
 
-
-[![Analytics](https://ga-beacon.appspot.com/UA-139292-31/chromeskel_a/readme)](https://github.com/igrigorik/ga-beacon)
